@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Resource</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="logo">TSA</a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="charities.html">Charities</a></li>
+            <li><a href="form.html" class="active">Form</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="reference.html" class="active">References</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="form-container">
+
+    <h1>Submit a New Resource</h1>
+    <p>Help our community grow by sharing new support services.</p>
+
+    <form id="form1">
+
+        <label class="label">Your Name:</label>
+        <input type="text" id="name" class="input-box">
+
+        <label class="label">Resource Details:</label>
+        <textarea id="feedback" class="textarea-box"></textarea>
+
+        <label class="label">Select Your Country:</label>
+        <select id="country" class="dropdown-box">
+            <option value="USA">USA</option>
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+        </select>
+
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    <div id="submission-output" class="output-box"></div>
+</div>
+
+<script src="js/form.js"></script>
+
+</body>
+</html>
+

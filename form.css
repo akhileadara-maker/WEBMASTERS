@@ -1,0 +1,62 @@
+.form-container {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 40px;
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.label {
+    display: block;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.input-box,
+.textarea-box,
+.dropdown-box {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    margin-top: 6px;
+}
+
+.textarea-box {
+    height: 140px;
+    resize: none;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 25px;
+    background: var(--primary);
+    padding: 14px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.submit-btn:hover {
+    background: #ff3a16;
+}
+
+.output-box {
+    margin-top: 25px;
+    background: #e8f2ff;
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}

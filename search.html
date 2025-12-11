@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Resources</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="logo">TSA</a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="charities.html">Charities</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="search.html" class="active">Search</a></li>
+            <li><a href="reference.html" class="active">References</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="header">
+    <h1>Search Community Resources</h1>
+    <p>Use the search bar below to quickly find local support services.</p>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search resources..." id="searchInput" onkeyup="filterResources()">
+        <select id="filterSelect" onchange="filterResources()">
+            <option value="all">All Categories</option>
+            <option value="food">Food Banks</option>
+            <option value="shelter">Shelters</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="mentalhealth">Mental Health</option>
+        </select>
+    </div>
+</section>
+
+<section class="results-grid">
+    <div class="resource-card" data-type="food">
+        <h2>North Texas Food Bank</h2>
+        <p>Meals and food distribution programs.</p>
+    </div>
+
+    <div class="resource-card" data-type="shelter">
+        <h2>The Stewpot</h2>
+        <p>Shelter and support services.</p>
+    </div>
+
+    <div class="resource-card" data-type="healthcare">
+        <h2>Los Barrios Unidos Clinic</h2>
+        <p>Affordable medical services.</p>
+    </div>
+
+    <div class="resource-card" data-type="mentalhealth">
+        <h2>Metrocare Services</h2>
+        <p>Mental health and wellness programs.</p>
+    </div>
+</section>
+
+<footer>
+    <p>2026 TSA Webmasters - All Rights Reserved</p>
+</footer>
+
+<script src="js/search.js"></script>
+</body>
+</html>
